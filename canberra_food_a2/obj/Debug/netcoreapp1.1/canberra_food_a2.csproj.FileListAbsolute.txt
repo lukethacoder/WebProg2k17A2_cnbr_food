@@ -1,0 +1,11 @@
+C:\Users\lukes\OneDrive\Documents\uni\2017 - S2\Web Design and Programming (7175)\A2\canberra_food_a2\canberra_food_a2\bin\Debug\netcoreapp1.1\canberra_food_a2.deps.json
+C:\Users\lukes\OneDrive\Documents\uni\2017 - S2\Web Design and Programming (7175)\A2\canberra_food_a2\canberra_food_a2\bin\Debug\netcoreapp1.1\canberra_food_a2.runtimeconfig.json
+C:\Users\lukes\OneDrive\Documents\uni\2017 - S2\Web Design and Programming (7175)\A2\canberra_food_a2\canberra_food_a2\bin\Debug\netcoreapp1.1\canberra_food_a2.runtimeconfig.dev.json
+C:\Users\lukes\OneDrive\Documents\uni\2017 - S2\Web Design and Programming (7175)\A2\canberra_food_a2\canberra_food_a2\bin\Debug\netcoreapp1.1\canberra_food_a2.dll
+C:\Users\lukes\OneDrive\Documents\uni\2017 - S2\Web Design and Programming (7175)\A2\canberra_food_a2\canberra_food_a2\bin\Debug\netcoreapp1.1\canberra_food_a2.pdb
+C:\Users\lukes\OneDrive\Documents\uni\2017 - S2\Web Design and Programming (7175)\A2\canberra_food_a2\canberra_food_a2\obj\Debug\netcoreapp1.1\canberra_food_a2.csprojResolveAssemblyReference.cache
+C:\Users\lukes\OneDrive\Documents\uni\2017 - S2\Web Design and Programming (7175)\A2\canberra_food_a2\canberra_food_a2\obj\Debug\netcoreapp1.1\canberra_food_a2.csproj.CoreCompileInputs.cache
+C:\Users\lukes\OneDrive\Documents\uni\2017 - S2\Web Design and Programming (7175)\A2\canberra_food_a2\canberra_food_a2\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+C:\Users\lukes\OneDrive\Documents\uni\2017 - S2\Web Design and Programming (7175)\A2\canberra_food_a2\canberra_food_a2\obj\Debug\netcoreapp1.1\canberra_food_a2.AssemblyInfo.cs
+C:\Users\lukes\OneDrive\Documents\uni\2017 - S2\Web Design and Programming (7175)\A2\canberra_food_a2\canberra_food_a2\obj\Debug\netcoreapp1.1\canberra_food_a2.dll
+C:\Users\lukes\OneDrive\Documents\uni\2017 - S2\Web Design and Programming (7175)\A2\canberra_food_a2\canberra_food_a2\obj\Debug\netcoreapp1.1\canberra_food_a2.pdb

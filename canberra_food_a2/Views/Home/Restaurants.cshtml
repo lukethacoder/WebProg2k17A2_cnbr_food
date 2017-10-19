@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "Restaurants";
+}
+
+<div class="container">
+    <section class="row header">
+        <div>
+            <h2>CANBERRA RESTAURANTS</h2>
+            <h1>@ViewData["Title"]</h1>
+        </div>
+    </section>
+    <section class="row section_about">
+        <div class="text col-sm-12 col-md-6">
+            <h2>The Restaurants</h2>
+            <p>
+                Whether you're after the tastes of the Mediterranean or some oriental delights, then Canberra has the restaurant for you.
+                <br><br>
+                Check out what's on offer by checking out our restaurants below.
+            </p>
+        </div>
+        <div class="text col-sm-12 col-md-6">
+            <h2>Customer Reviews</h2>
+            <p>
+                If you want to find out more about the restaurants highlighted below there's, plenty of information to be found at our customer reviews page.
+                <br><br>
+                <a asp-area="" asp-controller="Home" asp-action="Reviews">Click here</a> to head to the customer reviews page.
+            </p>
+        </div>
+    </section>
+
+    <section class="row rest_list">
+        <div class="col-xm-12 col-md-9 rest_items">
+            <div class="rest_item col-xs-12">
+                <img class="col-xs-12 col-md-4" src="../images/elastic_grid/is_thumbnail.jpg" />
+                <div class="col-xs-12 col-md-8">
+                    <h2>Italian and Sons</h2>
+                    <p>
+                        "A casual Italian trattoria that specialises in wood fried pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel & mustard fruits." - Australian Good Food Guide
+                        <br><br>
+                        <a href="https://italianandsons.com.au/" target="_blank" rel="noreferrer">Click Here</a> for the Italian and Sons website.
+                    </p>
+                </div>
+            </div>
+            <div class="rest_item col-xs-12">
+                <img class="col-xs-12 col-md-4" src="../images/elastic_grid/jamies_thumbnail.jpg" />
+                <div class="col-xs-12 col-md-8">
+                    <h2>Jamie's Italian</h2>
+                    <p>
+                        "With prime position in the Canberra Centre on Bunda Street, Jamie's Italian is the perfect place for a mid-shopping pit stop, or a buzzing evening out. With beautiful room-height windows and impressive lofty ceilings, the restaurant is full of atmosphere." - Jamie's Website
+                        <br><br>
+                        <a href="https://www.jamieoliver.com/italian/australia/" target="_blank" rel="noreferrer">Click Here</a> for to visit the website of Jamie's Italian.
+                    </p>
+                </div>
+            </div>
+            <div class="rest_item col-xs-12">
+                <img class="col-xs-12 col-md-4" src="../images/elastic_grid/chairman_yip_thumbnail.jpg" />
+                <div class="col-xs-12 col-md-8">
+                    <h2>Chairman & Yip</h2>
+                    <p>
+                        "The Chairman & Yip has become one of Canberra's longest standing and most highly regarded insitutions, having recieved numerous awards over the years, offering an ever consistent and professional quality of service for corporate dining, conferences and presentations" - Chairman & Yip Website
+                        <br><br>
+                        <a href="http://chairmangroup.com.au/thechairmanhk/" target="_blank" rel="noreferrer">Click Here</a> for the Chairman & Yip website.
+                    </p>
+                </div>
+            </div>
+            <div class="rest_item col-xs-12">
+                <img class="col-xs-12 col-md-4" src="../images/elastic_grid/dickson_noodle_thumbnail.jpg" />
+                <div class="col-xs-12 col-md-8">
+                    <h2>Dickson Asian Noodle House</h2>
+                    <p>
+                        "The Dickson Asian Noodle Houses specialises in traditional Malaysian, Thai and Lao cuisine. The dining atmosphere is casual and cosy providing for a la carte dining, banquets and take away." - Vibe FM Website
+                        <br><br>
+                        <a href="https://www.facebook.com/pages/Dickson-Asian-Noodle-House/156690017692038?ref=br_rs" target="_blank" rel="noreferrer">Click Here</a> for the Dickson Asian Noodle House Facebook page.
+                    </p>
+                </div>
+            </div>
+            <div class="rest_item col-xs-12">
+                <img class="col-xs-12 col-md-4" src="../images/elastic_grid/bluginger_thumbnail.jpg" />
+                <div class="col-xs-12 col-md-8">
+                    <h2>Blu Ginger</h2>
+                    <p>
+                        "At Blu Ginger we use only the freshest locally sourced produce, combined with authentic spices imported directly from the sub-continent, to offer classic, traditional recipes with a mordern twist, creating a unique and memorable dining expereince for you." - Blu Ginger Website
+                        <br><br>
+                        <a href="http://www.bluginger.com.au/" target="_blank" rel="noreferrer">Click Here</a> for the Blu Ginger website.
+                    </p>
+                </div>
+            </div>
+            <div class="rest_item col-xs-12">
+                <img class="col-xs-12 col-md-4" src="../images/elastic_grid/jewel_thumbnail.jpg" />
+                <div class="col-xs-12 col-md-8">
+                    <h2>Jewel of India</h2>
+                    <p>
+                        "Finding a balance between dishes inspired by authentic recipes and creating a modern take on classic cuisine sees a loyal following of Canberra locals returning for a mouth-watering feast." - Australian Good Food Guide Website
+                        <br><br>
+                        <a href="https://jewelofindia.com.au/" target="_blank" rel="noreferrer">Click Here</a> for the Jewel of India website.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3 rest_reviews">
+            <div>
+                <h2>Customer Reviews</h2>
+                <p>customer reviews go here</p>
+            </div>
+        </div>
+        
+    </section>
+</div>

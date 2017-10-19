@@ -1,0 +1,154 @@
+﻿@{
+    ViewData["Title"] = "Cuisine";
+}
+
+<!-- add links to see more info about "..." cuisine link for each restaraunt -->
+
+<div class="container">
+    <section class="row header">
+        <div>
+            <h2>CANBERRA RESTAURANTS</h2>
+            <h1>@ViewData["Title"]</h1>
+        </div>
+    </section>
+    <section class="section_about row">
+        <section class="text col-sm-12 col-md-6">
+            <h2>Tastes of the World</h2>
+            <p>
+                Whether you're after the tastes of the Mediterranean or some oriental delights, then Canberra has the restaurant for you.
+                <br<br>
+                Check out what's on offer by selecting a cuisine from the menu below.
+            </p>
+        </section>
+        <section class="food_image col-sm-12 col-md-6">
+            <img src="~/images/burger.jpg" />
+            <img src="~/images/pasta.jpg" />
+        </section>
+        <section class="row cuisine_list">
+            <div class="col-xs-12 col-md-9">
+                <div class="clearfix"></div>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Italian
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="row panel-body">
+                                <div class="rest_item col-xs-12">
+                                    <img class="rest_img col-xs-12 col-md-4" src="../images/elastic_grid/is_thumbnail.jpg" />
+                                    <div class="col-xs-12 col-md-8">
+                                        <h2>Italian and Sons</h2>
+                                        <p>
+                                            "A casual Italian trattoria that specialises in wood fried pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel & mustard fruits." - Australian Good Food Guide
+                                            <br>
+                                            <a href="https://italianandsons.com.au/" target="_blank" rel="noreferrer">Click Here</a> for the Italian and Sons website.<br>
+                                            <a href="https://en.wikipedia.org/wiki/Italian_cuisine" target="_blank" rel="noreferrer">Click Here</a> for more information on Italian Cuisine.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="rest_item col-xs-12">
+                                    <img class="rest_img col-xs-12 col-md-4" src="../images/elastic_grid/jamies_thumbnail.jpg" />
+                                    <div class="col-xs-12 col-md-8">
+                                        <h2>Jamie's Italian</h2>
+                                        <p>
+                                            "With prime position in the Canberra Centre on Bunda Street, Jamie's Italian is the perfect place for a mid-shopping pit stop, or a buzzing evening out. With beautiful room-height windows and impressive lofty ceilings, the restaurant is full of atmosphere." - Jamie's Website
+                                            <br>
+                                            <a href="https://www.jamieoliver.com/italian/australia/" target="_blank" rel="noreferrer">Click Here</a> for the Italian and Sons website.<br>
+                                            <a href="https://en.wikipedia.org/wiki/Italian_cuisine" target="_blank" rel="noreferrer">Click Here</a> for more information on Italian Cuisine.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Asian
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="row panel-body">
+                                <div class="rest_item col-xs-12">
+                                    <img class="rest_img col-xs-12 col-md-4" src="../images/elastic_grid/chairman_yip_thumbnail.jpg" />
+                                    <div class="col-xs-12 col-md-8">
+                                        <h2>Chairman & Yip</h2>
+                                        <p>
+                                            "The Chairman & Yip has become one of Canberra's longest standing and most highly regarded insitutions, having recieved numerous awards over the years, offering an ever consistent and professional quality of service for corporate dining, conferences and presentations" - Chairman & Yip Website
+                                            <br>
+                                            <a href="http://chairmangroup.com.au/thechairmanhk/" target="_blank" rel="noreferrer">Click Here</a> for the Chairman & Yip website.<br>
+                                            <a href="https://en.wikipedia.org/wiki/Asian_cuisine" target="_blank" rel="noreferrer">Click Here</a> for more information on Asian Cuisine.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="rest_item col-xs-12">
+                                    <img class="rest_img col-xs-12 col-md-4" src="../images/elastic_grid/dickson_noodle_thumbnail.jpg" />
+                                    <div class="col-xs-12 col-md-8">
+                                        <h2>Dickson Asian Noodle House</h2>
+                                        <p>
+                                            "The Dickson Asian Noodle Houses specialises in traditional Malaysian, Thai and Lao cuisine. The dining atmosphere is casual and cosy providing for a la carte dining, banquets and take away." - Vibe FM Website
+                                            <br>
+                                            <a href="https://www.facebook.com/pages/Dickson-Asian-Noodle-House/156690017692038?ref=br_rs" target="_blank" rel="noreferrer">Click Here</a> for the Dickson Asian Noodle House Facebook page.<br>
+                                            <a href="https://en.wikipedia.org/wiki/Asian_cuisine" target="_blank" rel="noreferrer">Click Here</a> for more information on Asian Cuisine.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    Indian
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="row panel-body">
+                                <div class="rest_item col-xs-12">
+                                    <img class="rest_img col-xm-12 col-md-4" src="../images/elastic_grid/bluginger_thumbnail.jpg" />
+                                    <div class="col-xm-12 col-md-8">
+                                        <h2>Blu Ginger</h2>
+                                        <p>
+                                            "At Blu Ginger we use only the freshest locally sourced produce, combined with authentic spices imported directly from the sub-continent, to offer classic, traditional recipes with a mordern twist, creating a unique and memorable dining expereince for you." - Blu Ginger Website
+                                            <br>
+                                            <a href="http://www.bluginger.com.au/" target="_blank" rel="noreferrer">Click Here</a> for the Blu Ginger website.<br>
+                                            <a href="https://en.wikipedia.org/wiki/Indian_cuisine" target="_blank" rel="noreferrer">Click Here</a> for more information on Indian Cuisine.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="rest_item col-xs-12">
+                                    <img class="rest_img col-xs-12 col-md-4" src="../images/elastic_grid/jewel_thumbnail.jpg" />
+                                    <div class="col-xs-12 col-md-8">
+                                        <h2>Jewel of India</h2>
+                                        <p>
+                                            "Finding a balance between dishes inspired by authentic recipes and creating a modern take on classic cuisine sees a loyal following of Canberra locals returning for a mouth-watering feast." - Australian Good Food Guide Website
+                                            <br>
+                                            <a href="https://jewelofindia.com.au/">Click Here</a> for the Jewel of India website.<br>
+<a href="https://en.wikipedia.org/wiki/Indian_cuisine" target="_blank" rel="noreferrer">Click Here</a> for more information on Indian Cuisine.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                   
+            <div class="col-xs-12 col-md-3 rest_reviews">
+                <div>
+                    <h2>Customer Reviews</h2>
+                    <p>customer reviews go here</p>
+                </div>
+            </div>
+
+        </section>
+    </section>
+</div>

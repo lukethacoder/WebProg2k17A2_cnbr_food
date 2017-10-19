@@ -1,0 +1,223 @@
+﻿@{
+    ViewData["Title"] = "Restaurant Locations";
+}
+
+<div class="container">
+    <section class="row header">
+        <div>
+            <h2>CANBERRA RESTAURANTS</h2>
+            <h1>@ViewData["Title"]</h1>
+        </div>
+    </section>
+    <section class="row map_cont">
+        @* The div element below is to display Google Map*@
+        <div class="map col-xs-12" id="googleMap" style="width:100%;height:800px;"></div>
+    </section>
+</div>
+
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAwrQVRDFzF3jiwyBG8_EFuDaFQwcJIvig"></script>
+
+<script>
+    var map;
+
+    var canberraCentre = new google.maps.LatLng(-35.2792284, 149.1321033);
+
+    function initMap() {
+        var canberraMap = {
+            center: canberraCentre,
+            zoom: 14,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+
+        map = new google.maps.Map(
+            document.getElementById("googleMap"), canberraMap);
+
+        addItalianAndSons(map);
+        addJamiesItalian(map);
+        addChairmanAndYip(map);
+        addDicksonAsianNoodleHouse(map);
+        addBluGinger(map);
+        addJewelOfIndia(map);
+    }
+
+
+
+    function addItalianAndSons(map) {
+        // Italian and Sons
+        var italianAndSons =
+            new google.maps.LatLng(-35.2750109, 149.1322888);
+        var markerItalianAndSons = new google.maps.Marker({
+            position: italianAndSons,
+        });
+
+        markerItalianAndSons.setMap(map);
+
+        var contentItalianAndSons =
+            ' <h1>Italian and Sons</h1>' +
+            ' <img src="../images/elastic_grid/is_thumbnail.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            '<p>Canberra’s Italian trattoria <b>Italian & Sons</b> has been the talk of the town since opening its doors in 2009. As the very first premium restaurant in bustling Lonsdale Street, Italian & Sons almost single-handedly began the transformation of the Braddon precinct.<br>' +
+            '<a href="https://italianandsons.com.au/" target="_blank" rel="noreferrer"' +
+            '"><br>Click Here</a> for the Italian and Sons website' +
+            '</p>';
+
+        var infoItalianAndSons = new google.maps.InfoWindow({
+            content: contentItalianAndSons
+        });
+
+        google.maps.event.addListener(markerItalianAndSons, 'click',
+            function () {
+                infoItalianAndSons.open(map, markerItalianAndSons);
+            });
+    }
+
+    function addJamiesItalian(map) {
+        // Jamies Italian
+        var jamiesItalian =
+            new google.maps.LatLng(-35.27775, 149.1327901);
+        var markerJamiesItalian = new google.maps.Marker({
+            position: jamiesItalian,
+        });
+
+        markerJamiesItalian.setMap(map);
+
+        var contentJamiesItalian =
+            ' <h1>Jamie\'s Italian</h1>' +
+            ' <img src="../images/elastic_grid/jamies_thumbnail.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            '<p><b>Jamie’s Italian</b> was founded by Jamie Oliver and his Italian mentor, chef Gennaro Contaldo, in Oxford, 2008. Since then it has grown to more than 60 restaurants worldwide, with plans for even more in towns, cities and countries around the world – but that’s not even half the story…<br>' +
+            '<a href="https://www.jamieoliver.com/italian/australia/" target="_blank" rel="noreferrer"' +
+            '"><br>Click Here</a> for the Jamie\'s Italian website' +
+            '</p>';
+
+        var infoJamiesItalian = new google.maps.InfoWindow({
+            content: contentJamiesItalian
+        });
+
+        google.maps.event.addListener(markerJamiesItalian, 'click',
+            function () {
+                infoJamiesItalian.open(map, markerJamiesItalian);
+            });
+    }
+
+    function addChairmanAndYip(map) {
+        // Chairman & Yip
+        var chairmanAndYip =
+            new google.maps.LatLng(-35.3116566, 149.1339437);
+        var markerChairmanAndYip = new google.maps.Marker({
+            position: chairmanAndYip,
+        });
+
+        markerChairmanAndYip.setMap(map);
+
+        var contentChairmanAndYip =
+            ' <h1>Chairman & Yip</h1>' +
+            ' <img src="../images/elastic_grid/chairman_yip_thumbnail.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            '<p>"The Chairman & Yip has become one of Canberra\'s longest standing and most highly regarded insitutions, having recieved numerous awards over the years, offering an ever consistent and professional quality of service for corporate dining, conferences and presentations" - Chairman & Yip Website <br>' +
+            '<a href="http://chairmangroup.com.au/thechairmanhk/" target="_blank" rel="noreferrer"' +
+            '"><br>Click Here</a> for the Chairman & Yip website' +
+            '</p>';
+
+        var infoChairmanAndYip = new google.maps.InfoWindow({
+            content: contentChairmanAndYip
+        });
+
+        google.maps.event.addListener(markerChairmanAndYip, 'click',
+            function () {
+                infoChairmanAndYip.open(map, markerChairmanAndYip);
+            });
+    }
+
+    function addDicksonAsianNoodleHouse(map) {
+        // Dickson Asian Noodle House
+        var chairmanAndYip =
+            new google.maps.LatLng(-35.250413, 149.136285);
+        var markerDicksonAsianNoodleHouse = new google.maps.Marker({
+            position: chairmanAndYip,
+        });
+
+        markerDicksonAsianNoodleHouse.setMap(map);
+
+        var contentDicksonAsianNoodleHouse =
+            ' <h1>Dickson Asian Noodle House</h1>' +
+            ' <img src="../images/elastic_grid/dickson_noodle_thumbnail.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            '<p>Noodle dishes, laksas and Thai curries in a functional, airy restaurant with a high, black ceiling.<br>' +
+            '<a href="http://www.vibefm.com.au/dicksonasiannoodlehouse.htm" target="_blank" rel="noreferrer"' +
+            '"><br>Click Here</a> for the Dickson Asian Noodle House facebook page' +
+            '</p>';
+
+        var infoDicksonAsianNoodleHouse = new google.maps.InfoWindow({
+            content: contentDicksonAsianNoodleHouse
+        });
+
+        google.maps.event.addListener(markerDicksonAsianNoodleHouse, 'click',
+            function () {
+                infoDicksonAsianNoodleHouse.open(map, markerDicksonAsianNoodleHouse);
+            });
+    }
+
+    function addBluGinger(map) {
+        // Blu Ginger
+        var bluGinger =
+            new google.maps.LatLng(-35.2773568, 149.1320212);
+        var markerBluGinger = new google.maps.Marker({
+            position: bluGinger,
+        });
+
+        markerBluGinger.setMap(map);
+
+        var contentBluGinger =
+            ' <h1>Blu Ginger</h1>' +
+            ' <img src="../images/elastic_grid/bluginger_thumbnail.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            '<p><b>Blu Ginger</b> Indian Restaurant was first established in Sydney in 2000, in the famous dining precinct of McMahons Point. Our talented chef, Mr Hari Prasad Sharma, has more than 28 years experience in the kitchens of major hotels in India, Japan and Australia.<br>' +
+            '<a href="http://www.bluginger.com.au/" target="_blank" rel="noreferrer"' +
+            '"><br>Click Here</a> for the Blu Ginger website' +
+            '</p>';
+
+        var infoBluGinger = new google.maps.InfoWindow({
+            content: contentBluGinger
+        });
+
+        google.maps.event.addListener(markerBluGinger, 'click',
+            function () {
+                infoBluGinger.open(map, markerBluGinger);
+            });
+    }
+
+    function addJewelOfIndia(map) {
+        // Jewel of India
+        var jewelOfIndia =
+            new google.maps.LatLng(-35.3207292, 149.1327307);
+        var markerJewelOfIndia = new google.maps.Marker({
+            position: jewelOfIndia,
+        });
+
+        markerJewelOfIndia.setMap(map);
+
+        var contentJewelOfIndia =
+            ' <h1>Jewel of India</h1>' +
+            ' <img src="../images/elastic_grid/jewel_thumbnail.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            '<p>The unique signature of a place and its people – Cuisine – tells us about a culture, people and lifestyles like no other! Therefore, it comes as no surprise that the very popular cuisine across the globe – Indian Food – is rich, diverse, colorful and so full of love! Indian Cuisine has picked the best from various cultures and traditions that are embedded deep in the hearts of its people.<br>' +
+            '<a href="https://jewelofindia.com.au/" target="_blank" rel="noreferrer"' +
+            '"><br>Click Here</a> for the Jewel of India website' +
+            '</p>';
+
+        var infoJewelOfIndia = new google.maps.InfoWindow({
+            content: contentJewelOfIndia
+        });
+
+        google.maps.event.addListener(markerJewelOfIndia, 'click',
+            function () {
+                infoJewelOfIndia.open(map, markerJewelOfIndia);
+            });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initMap);
+</script>
+
+

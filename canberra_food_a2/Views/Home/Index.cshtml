@@ -1,0 +1,173 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container">
+    <section class="row header">
+        <div>
+            <h2>CANBERRA RESTAURANTS</h2>
+            <q>People that love to eat are always the best people</q>
+            <h1>Julia Child</h1>
+        </div>
+    </section>
+
+    <section class="section_about row">
+        <div class="text col-sm-12 col-md-6">
+            <h1>Welcome To</h1>
+            <h2>CANBERRA RESTAURANTS</h2>
+            <p>
+                At Canberra Restaurants, we provide an overvie wof restaurants within Canberra and allow you to find a meal based on a certain cuisine, a specific dish that you're after or you're just after a meal within price range
+                <br><br>
+                We've got it all here for you. Just scroll down for further information
+            </p>
+        </div>
+        <div class="food_image col-sm-12 col-md-6">
+            <img src="~/images/burger.jpg" />
+            <img src="~/images/pasta.jpg" />
+        </div>
+    </section>
+
+    <section class="row section_pages">
+        <div class="col-sm-12 col-md-3">
+            <h1>Cuisine</h1>
+            <p>
+                The multicultural society in Canberra spoils the locals with such a vast amount of flavours from around the world.
+                <br>
+                <br>
+                <a asp-area="" asp-controller="Home" asp-action="Cuisine">Click here</a> to find out more about the different cuisines avaliable.
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <h1>Dishes</h1>
+            <p>
+                With a great amount of cuisines comes a great amount of dishes!
+                <br>
+                <br>
+                There are so many amazing dishes out there for you to try.
+                <br>
+                <br>
+                <a asp-area="" asp-controller="Home" asp-action="Dishes">Click here</a> to look for a dish.
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <h1>Price</h1>
+            <p>
+                Whether you're after a super cheap meal or want to treat yourself to something a little more fancy, Canberra has it all.
+                <br>
+                <br>
+                <a asp-area="" asp-controller="Home" asp-action="Price">Click here</a> to see what's available in your price range/
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <h1>Location</h1>
+            <p>
+                There might be the perfect meal waiting just around the corner from you. Check out our locations page to find a restaurant near you!
+                <br>
+                <br>
+                <a asp-area="" asp-controller="Home" asp-action="Location">Click here</a> to see what's avaliable near you.
+            </p>
+        </div>
+    </section>
+
+    <section class="row section_reviews">
+        <div class="food_image col-sm-12 col-md-6">
+            <img src="~/images/burger.jpg" />
+            <img src="~/images/pasta.jpg" />
+        </div>
+        <div class="text col-sm-12 col-md-6">
+            <h1>Reviews</h1>
+            <h2>Can't make up your mind?</h2>
+            <p>
+                People from around Australia have already visited these restaurants and have given us their thoughts
+                <br>
+                <br>
+                Head over to our <a asp-area="" asp-controller="Home" asp-action="Reviews">Customer Reviews Page</a> to find out more.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="row section_slider">
+        <h1>Featured Restaurants</h1>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <a href="https://italianandsons.com.au/" target="_blank" rel="noreferrer">
+                        <img src="~/images/carousel/itandsons_car.jpg" alt="Italian and Sons" class="img-responsive" />
+                        <div class="carousel-caption" role="option">
+                            <p>
+                                Italian and Sons
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.jamieoliver.com/italian/australia/" target="_blank" rel="noreferrer">
+                        <img src="~/images/carousel/jamies_car.jpg" alt="Jamies Italian" class="img-responsive" />
+                        <div class="carousel-caption" role="option">
+                            <p>
+                                Jamies Italian
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="http://chairmangroup.com.au/thechairmanhk/" target="_blank" rel="noreferrer">
+                        <img src="~/images/carousel/chairman_car.jpg" alt="The Chairman and Yip" class="img-responsive" />
+                        <div class="carousel-caption" role="option">
+                            <p>
+                                The Chairman and Yip
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.facebook.com/pages/Dickson-Asian-Noodle-House/156690017692038?ref=br_rs" target="_blank" rel="noreferrer">
+                        <img src="~/images/carousel/dicksonnoodle_car.jpg" alt="Dickson Asian Noodle House" class="img-responsive" />
+                        <div class="carousel-caption" role="option">
+                            <p>
+                                Dickson Asian Noodle House
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="http://www.bluginger.com.au/" target="_blank" rel="noreferrer">
+                        <img src="~/images/carousel/bluginger_car.jpg" alt="Blu Ginger" class="img-responsive" />
+                        <div class="carousel-caption" role="option">
+                            <p>
+                                Blu Ginger
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://jewelofindia.com.au/" target="_blank" rel="noreferrer">
+                        <img src="~/images/carousel/jewel_car.jpg" alt="Jewel of India" class="img-responsive" />
+                        <div class="carousel-caption" role="option">
+                            <p>
+                                Jewel of India
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+</div>
