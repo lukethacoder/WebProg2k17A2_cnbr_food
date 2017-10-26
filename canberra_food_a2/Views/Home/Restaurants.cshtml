@@ -23,7 +23,7 @@
             <p>
                 If you want to find out more about the restaurants highlighted below there's, plenty of information to be found at our customer reviews page.
                 <br><br>
-                <a asp-area="" asp-controller="Home" asp-action="Reviews">Click here</a> to head to the customer reviews page.
+                <a asp-area="" asp-controller="Rest_reviews" asp-action="Index">Click here</a> to head to the customer reviews page.
             </p>
         </div>
     </section>
@@ -100,7 +100,25 @@
         <div class="col-xs-12 col-md-3 rest_reviews">
             <div>
                 <h2>Customer Reviews</h2>
-                <p>customer reviews go here</p>
+                @model IEnumerable< canberra_food_a2.Models.Rest_reviews>
+
+                @{
+                    int index = 1;
+                    @foreach (var item in Model)
+                    {
+                        <h4>
+                            @Html.DisplayFor(modelItem => item.Heading)
+                        </h4>
+                        <h5>
+                            <div> @Html.DisplayFor(modelItem => item.Rating)</div>
+                            <div> @Html.DisplayFor(modelItem => item.Restaurant)</div>
+                            <div> @Html.DisplayFor(modelItem => item.Comment)</div>
+                        </h5>
+                        index++;
+                    }
+                }
+
+
             </div>
         </div>
         

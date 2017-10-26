@@ -4,11 +4,15 @@
     ViewData["Title"] = "Create";
 }
 
-<h2>Create</h2>
+<section class="row header">
+    <div>
+        <h2>CANBERRA RESTAURANTS</h2>
+        <h1>Create a Review</h1>
+    </div>
+</section>
 
 <form asp-action="Create">
     <div class="form-horizontal">
-        <h4>Rest_reviews</h4>
         <hr />
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="form-group">
@@ -16,13 +20,15 @@
             <div class="col-md-10">
                 <input asp-for="Date" class="form-control" />
                 <span asp-validation-for="Date" class="text-danger"></span>
+                <!-- DateTime.Now.ToString(); -->
             </div>
         </div>
         <div class="form-group">
-            <label asp-for="UserName" class="col-md-2 control-label"></label>
+            <label asp-for="Name" class="col-md-2 control-label"></label>
             <div class="col-md-10">
-                <input asp-for="UserName" class="form-control" />
-                <span asp-validation-for="UserName" class="text-danger"></span>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+                <!-- auto fill loged in user -->
             </div>
         </div>
         <div class="form-group">
@@ -33,18 +39,11 @@
             </div>
         </div>
         <div class="form-group">
-            <label asp-for="Comment" class="col-md-2 control-label"></label>
-            <div class="col-md-10">
-                <input asp-for="Comment" class="form-control" />
-                <span asp-validation-for="Comment" class="text-danger"></span>
-            </div>
-        </div>
-        <div class="form-group">
             <label asp-for="Restaurant" class="col-md-2 control-label"></label>
             <div class="col-md-10">
                 <!-- <input asp-for="Restaurant" class="form-control" />
-                <span asp-validation-for="Restaurant" class="text-danger"></span>
-                    -->
+            <span asp-validation-for="Restaurant" class="text-danger"></span>
+                -->
                 <select asp-for="Restaurant" class="form-control">
                     <option value="" selected disabled>Select a Restaurant</option>
                     <option>Italian and Sons</option>
@@ -55,6 +54,13 @@
                     <option>Jewel of India</option>
                 </select>
 
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Comment" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Comment" class="form-control" />
+                <span asp-validation-for="Comment" class="text-danger"></span>
             </div>
         </div>
         <div class="form-group">

@@ -9,7 +9,7 @@ namespace canberra_food_a2.Models
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
-        public string UserName { get; set; }
+        public string Name { get; set; }
         public string Heading { get; set; }
         public string Comment { get; set; }
         public string Restaurant { get; set; }

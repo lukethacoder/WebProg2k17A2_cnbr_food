@@ -56,7 +56,7 @@ namespace canberra_food_a2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Date,UserName,Heading,Comment,Restaurant,Rating")] Rest_reviews rest_reviews)
+        public async Task<IActionResult> Create([Bind("Id,Date,Name,Heading,Comment,Restaurant,Rating")] Rest_reviews rest_reviews)
         {
             if (ModelState.IsValid)
             {
@@ -89,7 +89,7 @@ namespace canberra_food_a2.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Manager")]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Date,UserName,Heading,Comment,Restaurant,Rating")] Rest_reviews rest_reviews)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Date,Name,Heading,Comment,Restaurant,Rating")] Rest_reviews rest_reviews)
         {
             if (id != rest_reviews.Id)
             {
@@ -101,6 +101,8 @@ namespace canberra_food_a2.Controllers
                 try
                 {
                     _context.Update(rest_reviews);
+                    /* Date = DateTime.Now.ToString(); */
+                    /* DateTime.Now.ToString(); */
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
