@@ -29,7 +29,7 @@
     </section>
 
     <section class="row rest_list">
-        <div class="col-xm-12 col-md-9 rest_items">
+        <div class="col-xm-12 col-md-12 rest_items">
             <div class="rest_item col-xs-12">
                 <img class="col-xs-12 col-md-4" src="../images/elastic_grid/is_thumbnail.jpg" />
                 <div class="col-xs-12 col-md-8">
@@ -95,30 +95,6 @@
                         <a href="https://jewelofindia.com.au/" target="_blank" rel="noreferrer">Click Here</a> for the Jewel of India website.
                     </p>
                 </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-3 rest_reviews">
-            <div>
-                <h2>Customer Reviews</h2>
-                @model IEnumerable< canberra_food_a2.Models.Rest_reviews>
-
-                @{
-                    int index = 1;
-                    @foreach (var item in Model)
-                    {
-                        <h4>
-                            @Html.DisplayFor(modelItem => item.Heading)
-                        </h4>
-                        <h5>
-                            <div> @Html.DisplayFor(modelItem => item.Rating)</div>
-                            <div> @Html.DisplayFor(modelItem => item.Restaurant)</div>
-                            <div> @Html.DisplayFor(modelItem => item.Comment)</div>
-                        </h5>
-                        index++;
-                    }
-                }
-
-
             </div>
         </div>
         

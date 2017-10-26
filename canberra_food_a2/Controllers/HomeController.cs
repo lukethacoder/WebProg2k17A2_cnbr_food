@@ -23,12 +23,18 @@ namespace canberra_food_a2.Controllers
             return View();
         }
 
-        public IActionResult Cuisine()
+        public async Task<IActionResult> Cuisine()
+        {
+            ViewData["Message"] = "This is your restaurants page";
+
+            return View(await _context.Rest_reviews.ToListAsync());
+        }
+        /* public IActionResult Cuisine()
         {
             ViewData["Message"] = "This is your Cuisine page";
 
             return View();
-        }
+        } */
 
         public IActionResult Dishes()
         {
@@ -48,19 +54,12 @@ namespace canberra_food_a2.Controllers
 
             return View();
         }
-        /* public IActionResult Restaurants()
+        public IActionResult Restaurants()
         {
             ViewData["Message"] = "This is your Restaurants page";
 
             return View();
-        } */
-        public async Task<IActionResult> Restaurants()
-        {
-            ViewData["Message"] = "This is your restaurants page";
-
-            return View(await _context.Rest_reviews.ToListAsync());
         }
-
         /* public IActionResult Reviews()
         {
             ViewData["Message"] = "This is your Reviews page";

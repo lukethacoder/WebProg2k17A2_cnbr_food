@@ -144,8 +144,26 @@
                    
             <div class="col-xs-12 col-md-3 rest_reviews">
                 <div>
-                    <h2>Customer Reviews</h2>
-                    <p>customer reviews go here</p>
+                    <h2>Reviews</h2>
+                    @model IEnumerable< canberra_food_a2.Models.Rest_reviews>
+
+                    @{
+                        int index = 1;
+                        @foreach (var item in Model)
+                        {
+                            <h4>
+                                @Html.DisplayFor(modelItem => item.Heading)
+                            </h4>
+                            <h5>
+                                <div> @Html.DisplayFor(modelItem => item.Rating)</div>
+                                <div> @Html.DisplayFor(modelItem => item.Restaurant)</div>
+                                <div> @Html.DisplayFor(modelItem => item.Comment)</div>
+                            </h5>
+                            index++;
+                        }
+                    }
+
+
                 </div>
             </div>
 

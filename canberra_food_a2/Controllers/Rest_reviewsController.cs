@@ -61,6 +61,9 @@ namespace canberra_food_a2.Controllers
             if (ModelState.IsValid)
             {
                 _context.Add(rest_reviews);
+                rest_reviews.Date = DateTime.Now;
+                rest_reviews.Agree = 0;
+                rest_reviews.Disagree = 0;
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
@@ -101,8 +104,9 @@ namespace canberra_food_a2.Controllers
                 try
                 {
                     _context.Update(rest_reviews);
-                    /* Date = DateTime.Now.ToString(); */
-                    /* DateTime.Now.ToString(); */
+                    rest_reviews.Date = DateTime.Now;
+                    rest_reviews.Name = User.Identity.Name;
+
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
