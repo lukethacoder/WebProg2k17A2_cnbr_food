@@ -15,6 +15,7 @@ namespace canberra_food_a2.Models
         public string Restaurant { get; set; }
         public int Rating { get; set; }
         public int Agree { get; set; }
+        /* public bool IsClicked { get; set; } */
         public int Disagree { get; set; }
     }
 }

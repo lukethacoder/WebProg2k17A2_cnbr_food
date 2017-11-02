@@ -2,7 +2,6 @@
     ViewData["Title"] = "Cuisine";
 }
 
-<!-- add links to see more info about "..." cuisine link for each restaraunt -->
 
 <div class="container">
     <section class="row header">
@@ -143,28 +142,35 @@
             </div>
                    
             <div class="col-xs-12 col-md-3 rest_reviews">
-                <div>
-                    <h2>Reviews</h2>
-                    @model IEnumerable< canberra_food_a2.Models.Rest_reviews>
+                <h2>REVIEWS</h2>
+                @model IEnumerable< canberra_food_a2.Models.Rest_reviews>
 
-                    @{
-                        int index = 1;
-                        @foreach (var item in Model)
-                        {
-                            <h4>
-                                @Html.DisplayFor(modelItem => item.Heading)
-                            </h4>
-                            <h5>
-                                <div> @Html.DisplayFor(modelItem => item.Rating)</div>
-                                <div> @Html.DisplayFor(modelItem => item.Restaurant)</div>
-                                <div> @Html.DisplayFor(modelItem => item.Comment)</div>
-                            </h5>
-                            index++;
-                        }
+                @{
+                    int index = 1;
+                    @foreach (var item in Model.OrderBy(item => item.Date))
+                    {
+                        <h4>
+                            @Html.DisplayFor(modelItem => item.Heading)
+                        </h4>
+                        <h5>
+                            <div> @{
+                                    for (int i = 0; i < item.Rating; i++)
+                                    {
+                                        <span style="color:blue;">&#x2605;</span>
+                                    }
+                                    for (int i = 0; i < 5 - item.Rating; i++)
+                                    {
+                                        <span>&#x2606;</span>
+                                    }
+                                }
+                            </div>
+                            <div> @Html.DisplayFor(modelItem => item.Restaurant)</div>
+                            <div> @Html.DisplayFor(modelItem => item.Comment)</div>
+                        </h5>
+                        index++;
                     }
-
-
-                </div>
+                }
+                <p>To read more reviews or to write your own review, head over to our <a asp-area="" asp-controller="Rest_reviews" asp-action="Index">Customer Reviews</a> page.</p>
             </div>
 
         </section>

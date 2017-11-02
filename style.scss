@@ -226,26 +226,12 @@ $c_margins: 50px 0;
             }
         }
     }
-    .rest_reviews {
-        background-color: lightblue;
-        height: 750px;
-        float: left;
-        div {
-            h2 {
-                @extend ._1font;
-            }
-            p {
-
-            }
-        }
-        
-    }
 }
 
 .cuisine_list {
     height: auto;
-    padding: 0px;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
     .rest_item {
         a {
             color: $c_03 !important;
@@ -276,43 +262,58 @@ $c_margins: 50px 0;
         }
     }
     .rest_reviews {
-        width: 90%;
-        margin: 0px 5%;
-        div {
-            h2 {
-                font-weight: bold;
-                font-size: 24px;
-            }
-            h3 {
+        margin: 0;
+        h2 {
+            font-size: 24px;
+            @extend ._1font;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid $c_03;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        h5 {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid $c_03;
+            div {
                 span {
                     color: $c_03 !important;
-                    font-size: 32px !important;
-                }   
+                    font-size: 18px !important;
+                }
+                margin-top: 10px;
             }
-            .review_buttons {
-                display: block;
-                min-height: 50px;
-                margin-bottom: 35px;
-                margin-top: 20px;
-                border-bottom: 2px solid $c_03;
-                a {
+
+            
+        }
+        h3 {
+            
+        }
+        .review_buttons {
+            display: block;
+            min-height: 50px;
+            margin-bottom: 35px;
+            margin-top: 20px;
+            border-bottom: 2px solid $c_03;
+            a {
+                position: relative;
+                button {
                     position: relative;
-                    button {
-                        position: relative;
-                    }
-                }
-                .button_left{
-                    float: left;
-                    margin-right: 5px;
-                    margin-bottom: 25px;
-                }
-                .button_right {
-                    float: right;
-                    margin-left: 5px;
-                    margin-bottom: 25px;
                 }
             }
-        }       
+            .button_left{
+                float: left;
+                margin-right: 5px;
+                margin-bottom: 25px;
+            }
+            .button_right {
+                float: right;
+                margin-left: 5px;
+                margin-bottom: 25px;
+            }
+        }     
     }
 }
 .map_cont {

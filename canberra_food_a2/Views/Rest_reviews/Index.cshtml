@@ -70,7 +70,7 @@
             <h4>Reviewed by <b>@Html.DisplayFor(modelItem => item.Name)</b> on <b>@Html.DisplayFor(modelItem => item.Date)</b></h4>
             <div class="review_buttons">
                 <a asp-action="Details" asp-route-id="@item.Id" class="button_left"><button class="btn_details btn btn-default" type="button">Details</button></a>
-                <a asp-action="Agree" asp-route-id="@item.Agree" class="button_left"><button class="btn btn-success" type="button">Agree (@item.Agree)</button></a>
+                <a asp-action="AgreeIncrease" asp-route-id="@item.Agree" class="button_left"><button class="btn btn-success" type="button">Agree (@item.Agree)</button></a>
                 <a asp-action="Disagree" asp-route-id="@item.Disagree" class="button_left"><button class="btn btn-danger" type="button">Disagree (@item.Disagree)</button></a>
                 @{
                     if (User.IsInRole("Manager"))

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Niconne|Oxygen");
-._1font, .header div h2, .section_about .text h2, .section_reviews .text h2, .rest_list .rest_items .rest_item div h2, .rest_list .rest_reviews div h2, .cuisine_list .rest_items .rest_item div h2 {
+._1font, .header div h2, .section_about .text h2, .section_reviews .text h2, .rest_list .rest_items .rest_item div h2, .cuisine_list .rest_items .rest_item div h2, .cuisine_list .rest_reviews h2 {
   font-family: 'Oxygen', sans-serif;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -168,15 +168,11 @@
       .rest_list .rest_items .rest_item img {
         padding-top: 25px;
         padding-bottom: 25px; }
-  .rest_list .rest_reviews {
-    background-color: lightblue;
-    height: 750px;
-    float: left; }
 
 .cuisine_list {
   height: auto;
-  padding: 0px;
-  margin: 0 auto; }
+  padding: 0;
+  margin: 0; }
   .cuisine_list .rest_item a {
     color: #f8bd08 !important; }
   .cuisine_list .rest_items {
@@ -190,29 +186,39 @@
         padding-top: 25px;
         padding-bottom: 25px; }
   .cuisine_list .rest_reviews {
-    width: 90%;
-    margin: 0px 5%; }
-    .cuisine_list .rest_reviews div h2 {
-      font-weight: bold;
-      font-size: 24px; }
-    .cuisine_list .rest_reviews div h3 span {
-      color: #f8bd08 !important;
-      font-size: 32px !important; }
-    .cuisine_list .rest_reviews div .review_buttons {
+    margin: 0; }
+    .cuisine_list .rest_reviews h2 {
+      font-size: 24px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #f8bd08; }
+    .cuisine_list .rest_reviews h4 {
+      font-size: 16px;
+      font-weight: bold; }
+    .cuisine_list .rest_reviews h5 {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #f8bd08; }
+      .cuisine_list .rest_reviews h5 div {
+        margin-top: 10px; }
+        .cuisine_list .rest_reviews h5 div span {
+          color: #f8bd08 !important;
+          font-size: 18px !important; }
+    .cuisine_list .rest_reviews .review_buttons {
       display: block;
       min-height: 50px;
       margin-bottom: 35px;
       margin-top: 20px;
       border-bottom: 2px solid #f8bd08; }
-      .cuisine_list .rest_reviews div .review_buttons a {
+      .cuisine_list .rest_reviews .review_buttons a {
         position: relative; }
-        .cuisine_list .rest_reviews div .review_buttons a button {
+        .cuisine_list .rest_reviews .review_buttons a button {
           position: relative; }
-      .cuisine_list .rest_reviews div .review_buttons .button_left {
+      .cuisine_list .rest_reviews .review_buttons .button_left {
         float: left;
         margin-right: 5px;
         margin-bottom: 25px; }
-      .cuisine_list .rest_reviews div .review_buttons .button_right {
+      .cuisine_list .rest_reviews .review_buttons .button_right {
         float: right;
         margin-left: 5px;
         margin-bottom: 25px; }
@@ -316,7 +322,7 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  ._1font, .header div h2, .section_about .text h2, .section_reviews .text h2, .rest_list .rest_items .rest_item div h2, .rest_list .rest_reviews div h2, .cuisine_list .rest_items .rest_item div h2 {
+  ._1font, .header div h2, .section_about .text h2, .section_reviews .text h2, .rest_list .rest_items .rest_item div h2, .cuisine_list .rest_items .rest_item div h2, .cuisine_list .rest_reviews h2 {
     font-family: 'Oxygen', sans-serif;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -409,7 +415,7 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-  ._1font, .header div h2, .section_about .text h2, .section_reviews .text h2, .rest_list .rest_items .rest_item div h2, .rest_list .rest_reviews div h2, .cuisine_list .rest_items .rest_item div h2 {
+  ._1font, .header div h2, .section_about .text h2, .section_reviews .text h2, .rest_list .rest_items .rest_item div h2, .cuisine_list .rest_items .rest_item div h2, .cuisine_list .rest_reviews h2 {
     font-family: 'Oxygen', sans-serif;
     letter-spacing: 3px;
     text-transform: uppercase;

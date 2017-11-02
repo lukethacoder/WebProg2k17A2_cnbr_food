@@ -44,6 +44,12 @@ $RECYCLE.BIN/
 .AppleDesktop
 Network Trash Folder
 Temporary Items
-.jpg
+.jpgs
 node_modules/
 .vs/
+canberra_food_a2/Models/Rest_reviews.cs
+canberra_food_a2/node_modules/.bin/cake
+*.cmd
+canberra_food_a2/node_modules/.bin/coffee
+canberra_food_a2/node_modules/.bin/coffee.cmd
+canberra_food_a2/node_modules/.bin/color-support
